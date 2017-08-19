@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+
+    tools:context="com.talukder.masum.calculator.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editNumber"
+            android:textColor="#d50000"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:inputType="numberDecimal"
+            android:paddingBottom="20dp"
+            />
+
+        //-------------------in this layout two layout horizontally ----------/
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    //---------------layout for left 5 button----------
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="vertical">
+
+
+        <Button
+
+            style="@style/buttonStyle"
+            android:text="@string/devide"
+            android:onClick="onAdd"
+            android:id="@+id/buttonDevide" />
+
+        <Button
+
+            style="@style/buttonStyle"
+            android:text="@string/into"
+            android:onClick="onAdd"
+            android:id="@+id/buttonInto" />
+
+        <Button
+            style="@style/buttonStyle"
+            android:text="@string/plus"
+            android:onClick="onAdd"
+            android:id="@+id/buttonPlus" />
+
+        <Button
+            style="@style/buttonStyle"
+            android:text="@string/minus"
+            android:onClick="onAdd"
+            android:id="@+id/buttonMines" />
+
+        <Button
+            style="@style/buttonStyle"
+            android:text="@string/equal"
+            android:onClick="oncalculate"
+            android:id="@+id/buttonEqual" />
+    </LinearLayout>
+
+//--------------layout for right all button------------------
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/buttonStyleNumber"
+                android:text="@string/reminder"
+                android:onClick="onAdd"
+                android:id="@+id/buttonReminder"/>
+            <Button
+                style="@style/buttonStyleNumber"
+                android:text="@string/AC"
+                android:layout_width="182dp"
+                android:onClick="cancel"
+                android:id="@+id/buttonCancel"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/buttonStyleNumber"
+                android:text="@string/one"
+                android:onClick="onclickNUmber"
+
+                android:id="@+id/buttonOne"/>
+            <Button
+                style="@style/buttonStyleNumber"
+                android:text="@string/two"
+                android:onClick="onclickNUmber"
+
+                android:id="@+id/buttonTwo"/>
+            <Button
+                style="@style/buttonStyleNumber"
+                android:text="@string/three"
+                android:onClick="onclickNUmber"
+                android:id="@+id/buttonThree"/>
+
+
+        </LinearLayout>
+
+        //-------------------middle three button----------//
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/buttonStyleNumber"
+                android:text="@string/four"
+                android:onClick="onclickNUmber"
+                android:id="@+id/buttonFour"/>
+            <Button
+                style="@style/buttonStyleNumber"
+                android:text="@string/five"
+                android:onClick="onclickNUmber"
+                android:id="@+id/buttonFive"
+                />
+            <Button
+                style="@style/buttonStyleNumber"
+                android:text="@string/six"
+                android:onClick="onclickNUmber"
+                android:id="@+id/buttonSix"/>
+
+        </LinearLayout>
+
+        //--------last three button---------
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <Button
+                style="@style/buttonStyleNumber"
+                android:text="@string/seven"
+                android:onClick="onclickNUmber"
+                android:id="@+id/buttonSeven"/>
+            <Button
+                style="@style/buttonStyleNumber"
+                android:text="@string/eight"
+                android:onClick="onclickNUmber"
+                android:id="@+id/buttonEight"/>
+            <Button
+                style="@style/buttonStyleNumber"
+                android:text="@string/nine"
+                android:onClick="onclickNUmber"
+                android:id="@+id/buttonNine"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="178dp"
+                style="@style/buttonStyleNumber"
+                android:text="@string/zero"
+                android:onClick="onclickNUmber"
+                android:id="@+id/buttonZero"/>
+            <Button
+                style="@style/buttonStyleNumber"
+                android:text="@string/dot"
+                android:onClick="onclickNUmber"
+               android:id="@+id/buttonDot"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
